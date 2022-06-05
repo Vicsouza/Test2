@@ -8,11 +8,30 @@
 </head>
 <body>
     <h1>Testando as configurações do Git</h1>
-    <p>Passos:</p>
+    <span>Passos root-commit:</span>
     <p>
-        git init (Para transoformar a pasta em um repositorio git)<br>
-        git status (Para mostrar o status d repositorio)<br>
-        git add ["nome" ou "." -> para pegar todos os arquivos do repositorio] (adiciona um arquivo para ser monitorado pelo git)
+        git init -> Para transoformar a pasta em um repositorio git<br>
+        git status -> Para mostrar o status d repositorio<br>
+        git add ("nome" ou "." -> para pegar todos os arquivos do repositorio) -> adiciona um arquivo para ser monitorado pelo git <br>
+        git commit -m (-m serve para inserir uma mensagem relacionada a commit, ou seja, um "resumo" do que foi adicionado/alterado) -> Serve para realizar as alterações feitas no arquivo<br>
+        Obs.: como é o primeiro commit (root-commit) os passos são esses;
+    </p>
+    <span>Passos referente a alterações no arquivo</span>
+    <p>
+        git add (nome) -> deve ser adicionado novamente o arquivo<br>
+        git commit -m -> para realizar as alterações
+    </p>
+
+    <span>O passo a passo desse arquivo aqui:</span>
+    <p>
+        test -> git init
+        test -> git status
+        test -> git add index.html
+        test -> git commit -m "adicionando os passos iniciais do arquivo de teste"
+        test -> git status
+        test -> git add index.html
+        test -> git status
+        test -> git commit -m "adicionado os passos restantes e o hitorico desse arquivo"
     </p>
 </body>
 </html>
