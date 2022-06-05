@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test do Git</title>
 </head>
+
 <body>
     <h1>Testando as configurações do Git</h1>
     <span>Passos root-commit:</span>
     <p>
         git init -> Para transoformar a pasta em um repositorio git<br>
         git status -> Para mostrar o status d repositorio<br>
-        git add ("nome" ou "." -> para pegar todos os arquivos do repositorio) -> adiciona um arquivo para ser monitorado pelo git <br>
-        git commit -m (-m serve para inserir uma mensagem relacionada a commit, ou seja, um "resumo" do que foi adicionado/alterado) -> Serve para realizar as alterações feitas no arquivo<br>
+        git add ("nome" ou "." -> para pegar todos os arquivos do repositorio) -> adiciona um arquivo para ser
+        monitorado pelo git <br>
+        git commit -m (-m serve para inserir uma mensagem relacionada a commit, ou seja, um "resumo" do que foi
+        adicionado/alterado) -> Serve para realizar as alterações feitas no arquivo<br>
         Obs.: como é o primeiro commit (root-commit) os passos são esses;
     </p>
     <span>Passos referente a alterações no arquivo</span>
@@ -21,6 +25,23 @@
         git add (nome) -> deve ser adicionado novamente o arquivo<br>
         git commit -m -> para realizar as alterações
     </p>
+
+    <span>Passos para criar e utilizar um servidor no git</span>
+    <p>
+        mkdir serverTest -> criar uma pasta de servidor<br>
+        git init --bare -> para indicar que esse é apenas um repositorio que contem as alterações dos arquivos e não os arquivos fisicos<br>
+        git remote -> para mostrar todos os repositorios remotos relacionado repositorio<br>
+        git remote add local "caminho do servidor"-> para adicionar um novo local remoto no repositorio master<br>
+        git clone "endereço do servidor" -> serve para coletar os dados do servidor
+    </p>
+
+    <span>Dados extras</span>
+    <p>
+        git log - > para visualizar o historico de commit<br>
+        .gitignore -> uma pasta que tem como finalidade informar quais arquivos devem ser ignorados pelo monitoramento
+        do git
+    </p>
+
 
     <span>O passo a passo desse arquivo aqui:</span>
     <p>
@@ -32,6 +53,18 @@
         test -> git add index.html <br>
         test -> git status <br>
         test -> git commit -m "adicionado os passos restantes e o historico desse arquivo" <br>
+        <!--vamos deixar essa parte para depois e focar no passos utilizados para criar um servidor-->
+        Git -> mkdir serverTest <br>
+        serverTest -> git init --bare <br>
+        test -> git remote add local /d/Code/Git/serverTest <br>
+        test -> git remote <br>
+        Git -> mkdir usuarioTest
+        usuarioTest/projetos -> git clone /d/Code/Git/serverTest <br>
+        test -> git push local master
+        usuarioTest/projetos -> git remote rename origin local
+        usuarioTest/projetos -> git pull local master
+
     </p>
 </body>
+
 </html>
