@@ -23,7 +23,7 @@
     <span>Passos referente a alterações no arquivo</span>
     <p>
         git add (nome) -> deve ser adicionado novamente o arquivo<br>
-        git commit -m -> para realizar as alterações
+        git commit -m -> para realizar as alterações<br>
     </p>
 
     <span>Passos para criar e utilizar um servidor no git</span>
@@ -32,14 +32,19 @@
         git init --bare -> para indicar que esse é apenas um repositorio que contem as alterações dos arquivos e não os arquivos fisicos<br>
         git remote -> para mostrar todos os repositorios remotos relacionado repositorio<br>
         git remote add local "caminho do servidor"-> para adicionar um novo local remoto no repositorio master<br>
-        git clone "endereço do servidor" -> serve para coletar os dados do servidor
+        git clone "endereço do servidor" -> serve para coletar os dados do servidor<br>
     </p>
 
     <span>Dados extras</span>
     <p>
-        git log - > para visualizar o historico de commit<br>
+        git log -> para visualizar o historico de commit<br>
         .gitignore -> uma pasta que tem como finalidade informar quais arquivos devem ser ignorados pelo monitoramento
-        do git
+        do git<br>
+        <!-- Github -->
+        gitHub -> No canto superior direito no botão de "+", selecione "new repository"<br>
+        git remote add "origin" "https://github.com/Vicsouza/Test.git" -> Função para adicionar o repositorio no git, as informações entre aspas podem ser alteradas<br>
+        git push -u origin master -> para mandar os arquivos("-u" informar que esse seria o arquivo master, sendo necessario apenas o comando git push apartir dai)<br>
+
     </p>
 
 
@@ -60,10 +65,12 @@
         test -> git remote <br>
         Git -> mkdir usuarioTest
         usuarioTest/projetos -> git clone /d/Code/Git/serverTest <br>
-        test -> git push local master
-        usuarioTest/projetos -> git remote rename origin local
-        usuarioTest/projetos -> git pull local master
-
+        test -> git push local master<br>
+        usuarioTest/projetos -> git remote rename origin local<br>
+        usuarioTest/projetos -> git pull local master<br>
+        <!--Adicionando o repositorio no GitHub-->
+        test -> git remote add origin https://github.com/Vicsouza/Test.git<br>
+        test -> git push origin master<br>
     </p>
 </body>
 
