@@ -94,6 +94,14 @@
         test(passos) -> git checkout master<br>
         test(master) -> git rebase passos<br>
         test -> git push origin master<br>
+        <!-- ctrl z -->
+        test -> git checkout -- index.html<br>
+        test -> git add .<br>
+        test -> git reset HEAD index.html<br>
+        test -> git checkout -- index.html<br>
+        test -> git add.<br>
+        test -> git commit -m "adcionado info sobre o ctrl z"<br>
+
     </p>
 </body>
 
