@@ -79,9 +79,14 @@
         <!--Adicionando o repositorio no GitHub-->
         test -> git remote add origin https://github.com/Vicsouza/Test.git<br>
         test -> git push origin master<br>
+        <!--Mechendo com Branches-->
         test -> git branch passos <br>
         test -> git checkout passos <br>
-        test(passos) -> 
+        test(passos) -> git add index.html <br>
+        test(passos) -> git commit -m "adicionado mais passos sobre as branches"<br>
+        test(passos) -> git checkout master<br>
+        test(master) -> git rebase passos<br>
+        test -> git push origin master<br>
     </p>
 </body>
 
